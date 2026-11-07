@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Dvorak Forever
+## Notes: Moves key bindings between QWERTY and Dvorak so each action stays on the same physical key.
+## Author: Donald Morton
+## Version: 1.1.0
+## SavedVariables: DvorakForeverDB
+
+DvorakForever.lua
