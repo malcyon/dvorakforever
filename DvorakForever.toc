@@ -2,7 +2,9 @@
 ## Title: Dvorak Forever
 ## Notes: Moves key bindings between QWERTY and Dvorak so each action stays on the same physical key.
 ## Author: Donald Morton
-## Version: 1.1.0
+## Version: @project-version@
+## X-License: GPL-3.0-or-later
+## X-Website: https://github.com/malcyon/dvorakforever
 ## SavedVariables: DvorakForeverDB
 
 DvorakForever.lua
