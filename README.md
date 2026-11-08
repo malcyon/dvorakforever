@@ -1,7 +1,7 @@
 # Dvorak Forever
 
 <!-- One or two sentences: what the addon does and who it is for. -->
-A WoW Forever addon for players who type Dvorak. It moves every key binding to
+A World of Warcraft addon for players who type Dvorak. It moves every key binding to
 the key in the same physical place, so movement stays under your left hand
 (W A S D become , A O E) while chat still types Dvorak.
 
@@ -27,8 +27,9 @@ bindings, and why switching the system layout to QWERTY isn't a fix (chat). -->
 <!-- CurseForge link once the project exists. -->
 1. Install from CurseForge, or download the zip from
    [Releases](https://github.com/malcyon/dvorakforever/releases).
-2. Unzip it into `World of Warcraft/_forever_/Interface/AddOns/`, so the
-   folder is `AddOns/DvorakForever`.
+2. Unzip it into the `Interface/AddOns/` folder of your game version
+   (`_forever_`, `_retail_` or `_classic_era_`), so the folder is
+   `AddOns/DvorakForever`.
 
 ## Usage
 
@@ -51,7 +52,7 @@ bindings, and why switching the system layout to QWERTY isn't a fix (chat). -->
 
 ## Supported games
 
-WoW Forever.
+WoW Forever, Retail and Classic Era.
 
 ## Reporting problems
 

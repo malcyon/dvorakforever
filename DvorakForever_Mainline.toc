@@ -1,4 +1,4 @@
-## Interface: 16001
+## Interface: 120105, 16001
 ## Title: Dvorak Forever
 ## Notes: Moves key bindings between QWERTY and Dvorak so each action stays on the same physical key.
 ## Author: Donald Morton
