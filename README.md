@@ -16,7 +16,8 @@ bindings, and why switching the system layout to QWERTY isn't a fix (chat). -->
 ## Features
 
 - Switches every binding between QWERTY and Dvorak positions in one click,
-  including Shift, Ctrl and Alt combinations, spells, macros and action bars.
+  including Shift, Ctrl, Alt and Mac Command combinations, spells, macros and
+  action bars.
 - Switching back restores the original bindings exactly.
 - `/` stays on `/`, so it still opens chat with a slash command.
 - Works on account-wide or character-specific bindings, whichever the Key

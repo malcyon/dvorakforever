@@ -24,7 +24,14 @@ end
 local MAPS = { DVORAK = TO_DVORAK, QWERTY = TO_QWERTY }
 local NAMES = { QWERTY = "Default (QWERTY)", DVORAK = "Dvorak" }
 
-local MODIFIERS = { "", "SHIFT-", "CTRL-", "ALT-", "CTRL-SHIFT-", "ALT-SHIFT-", "ALT-CTRL-", "ALT-CTRL-SHIFT-" }
+-- Every combination of modifier keys, in the order the game writes them:
+-- ALT, CTRL, SHIFT, META (META is the Command key on a Mac).
+local MODIFIERS = { "" }
+for _, mod in ipairs({ "META-", "SHIFT-", "CTRL-", "ALT-" }) do
+	for i = 1, #MODIFIERS do
+		MODIFIERS[#MODIFIERS + 1] = mod .. MODIFIERS[i]
+	end
+end
 
 -- Actions that belong to the character on the key, not its place: "/" starts
 -- a slash command in chat. They stay on their character when that key is free.
@@ -112,8 +119,9 @@ end
 local tester = CreateFrame("Frame")
 tester:Hide()
 tester:SetScript("OnKeyDown", function(_, key)
-	if key:find("SHIFT$") or key:find("CTRL$") or key:find("ALT$") then return end
-	local mod = (IsAltKeyDown() and "ALT-" or "") .. (IsControlKeyDown() and "CTRL-" or "") .. (IsShiftKeyDown() and "SHIFT-" or "")
+	if key:find("SHIFT$") or key:find("CTRL$") or key:find("ALT$") or key:find("META$") then return end
+	local mod = (IsAltKeyDown() and "ALT-" or "") .. (IsControlKeyDown() and "CTRL-" or "")
+		.. (IsShiftKeyDown() and "SHIFT-" or "") .. (IsMetaKeyDown() and "META-" or "")
 	local action = GetBindingAction(mod .. key)
 	Print(("key %s -> %s"):format(mod .. key, action ~= "" and action or "(nothing)"))
 end)
