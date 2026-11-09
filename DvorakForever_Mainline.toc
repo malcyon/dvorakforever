@@ -6,6 +6,7 @@
 ## X-License: GPL-3.0-or-later
 ## X-Website: https://github.com/malcyon/dvorakforever
 ## X-Curse-Project-ID: 1790634
+## IconTexture: Interface\AddOns\DvorakForever\icon
 ## SavedVariables: DvorakForeverDB
 
 DvorakForever.lua
